@@ -1,18 +1,18 @@
 <?php
 
-namespace Vendor\LLMObservability;
+namespace Mubseoul\LLMObservability;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Support\Facades\Route;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Vendor\LLMObservability\Commands\PruneLogsCommand;
-use Vendor\LLMObservability\Commands\RecalculateAggregatesCommand;
-use Vendor\LLMObservability\Commands\ShowPricingCommand;
-use Vendor\LLMObservability\Http\Middleware\EnsureLLMQuota;
-use Vendor\LLMObservability\Jobs\ResetDailyQuotasJob;
-use Vendor\LLMObservability\Jobs\ResetMonthlyQuotasJob;
-use Vendor\LLMObservability\Services\LLMRecorder;
+use Mubseoul\LLMObservability\Commands\PruneLogsCommand;
+use Mubseoul\LLMObservability\Commands\RecalculateAggregatesCommand;
+use Mubseoul\LLMObservability\Commands\ShowPricingCommand;
+use Mubseoul\LLMObservability\Http\Middleware\EnsureLLMQuota;
+use Mubseoul\LLMObservability\Jobs\ResetDailyQuotasJob;
+use Mubseoul\LLMObservability\Jobs\ResetMonthlyQuotasJob;
+use Mubseoul\LLMObservability\Services\LLMRecorder;
 
 class LLMObservabilityServiceProvider extends PackageServiceProvider
 {

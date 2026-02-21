@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\LLMObservability\Commands;
+namespace Mubseoul\LLMObservability\Commands;
 
 use Illuminate\Console\Command;
 

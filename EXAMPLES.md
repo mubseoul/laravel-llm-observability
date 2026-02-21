@@ -17,7 +17,7 @@ This document provides practical examples for integrating Laravel LLM Observabil
 ### Simple Request Recording
 
 ```php
-use Vendor\LLMObservability\Facades\LLM;
+use Mubseoul\LLMObservability\Facades\LLM;
 
 $response = LLM::record([
     'provider' => 'openai',
@@ -30,7 +30,7 @@ $response = LLM::record([
 ### Recording with Full Context
 
 ```php
-use Vendor\LLMObservability\Facades\LLM;
+use Mubseoul\LLMObservability\Facades\LLM;
 
 $response = LLM::record([
     'provider' => 'openai',
@@ -56,7 +56,7 @@ $response = LLM::record([
 
 ```php
 use OpenAI\Laravel\Facades\OpenAI;
-use Vendor\LLMObservability\Facades\LLM;
+use Mubseoul\LLMObservability\Facades\LLM;
 
 class ChatService
 {
@@ -96,7 +96,7 @@ class ChatService
 
 ```php
 use OpenAI\Laravel\Facades\OpenAI;
-use Vendor\LLMObservability\Facades\LLM;
+use Mubseoul\LLMObservability\Facades\LLM;
 
 public function streamChat(string $message)
 {
@@ -137,7 +137,7 @@ public function streamChat(string $message)
 
 ```php
 use Illuminate\Support\Facades\Http;
-use Vendor\LLMObservability\Facades\LLM;
+use Mubseoul\LLMObservability\Facades\LLM;
 
 class AnthropicService
 {
@@ -183,7 +183,7 @@ class AnthropicService
 
 ```php
 use Illuminate\Support\Facades\Http;
-use Vendor\LLMObservability\Facades\LLM;
+use Mubseoul\LLMObservability\Facades\LLM;
 
 class OllamaService
 {
@@ -219,7 +219,7 @@ class OllamaService
 ### Creating User Quotas
 
 ```php
-use Vendor\LLMObservability\Models\LLMQuota;
+use Mubseoul\LLMObservability\Models\LLMQuota;
 
 // Create a quota for a specific user
 LLMQuota::create([
@@ -237,7 +237,7 @@ LLMQuota::create([
 ### Creating Team Quotas
 
 ```php
-use Vendor\LLMObservability\Models\LLMQuota;
+use Mubseoul\LLMObservability\Models\LLMQuota;
 
 LLMQuota::create([
     'scope' => 'team',
@@ -251,7 +251,7 @@ LLMQuota::create([
 ### Programmatic Quota Checking
 
 ```php
-use Vendor\LLMObservability\Services\QuotaEnforcer;
+use Mubseoul\LLMObservability\Services\QuotaEnforcer;
 
 $enforcer = app(QuotaEnforcer::class);
 
@@ -286,7 +286,7 @@ Route::middleware(['auth', 'llm.quota'])->group(function () {
 ### Cost Threshold Alert
 
 ```php
-use Vendor\LLMObservability\Models\LLMAlertRule;
+use Mubseoul\LLMObservability\Models\LLMAlertRule;
 
 LLMAlertRule::create([
     'name' => 'Daily Cost Limit',
@@ -345,7 +345,7 @@ LLMAlertRule::create([
 ### Multi-Provider Fallback
 
 ```php
-use Vendor\LLMObservability\Facades\LLM;
+use Mubseoul\LLMObservability\Facades\LLM;
 
 class AIService
 {
@@ -383,8 +383,8 @@ class AIService
 ### Batch Processing with Rate Limiting
 
 ```php
-use Vendor\LLMObservability\Facades\LLM;
-use Vendor\LLMObservability\Services\QuotaEnforcer;
+use Mubseoul\LLMObservability\Facades\LLM;
+use Mubseoul\LLMObservability\Services\QuotaEnforcer;
 
 class BatchProcessor
 {
@@ -435,7 +435,7 @@ class BatchProcessor
 ### Custom Pricing Provider
 
 ```php
-use Vendor\LLMObservability\Contracts\PricingProvider;
+use Mubseoul\LLMObservability\Contracts\PricingProvider;
 
 class CustomPricingProvider implements PricingProvider
 {
@@ -483,8 +483,8 @@ class CustomPricingProvider implements PricingProvider
 ### Analytics Dashboard Integration
 
 ```php
-use Vendor\LLMObservability\Models\LLMRequest;
-use Vendor\LLMObservability\Models\LLMUsageAggregate;
+use Mubseoul\LLMObservability\Models\LLMRequest;
+use Mubseoul\LLMObservability\Models\LLMUsageAggregate;
 
 class LLMAnalytics
 {

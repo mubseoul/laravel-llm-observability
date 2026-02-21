@@ -1,10 +1,10 @@
 <?php
 
-namespace Vendor\LLMObservability\Services;
+namespace Mubseoul\LLMObservability\Services;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
-use Vendor\LLMObservability\Models\LLMUsageAggregate;
+use Mubseoul\LLMObservability\Models\LLMUsageAggregate;
 
 class AggregateService
 {

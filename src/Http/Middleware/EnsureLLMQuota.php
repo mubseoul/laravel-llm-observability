@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\LLMObservability\Http\Middleware;
+namespace Mubseoul\LLMObservability\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Vendor\LLMObservability\Services\QuotaEnforcer;
+use Mubseoul\LLMObservability\Services\QuotaEnforcer;
 
 class EnsureLLMQuota
 {

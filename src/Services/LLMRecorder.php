@@ -1,12 +1,12 @@
 <?php
 
-namespace Vendor\LLMObservability\Services;
+namespace Mubseoul\LLMObservability\Services;
 
 use Closure;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Str;
-use Vendor\LLMObservability\Jobs\RecordLLMRequestJob;
-use Vendor\LLMObservability\Models\LLMRequest;
+use Mubseoul\LLMObservability\Jobs\RecordLLMRequestJob;
+use Mubseoul\LLMObservability\Models\LLMRequest;
 
 class LLMRecorder
 {

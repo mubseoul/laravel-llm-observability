@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\LLMObservability\Filament\Resources;
+namespace Mubseoul\LLMObservability\Filament\Resources;
 
 use Filament\Forms;
 use Filament\Resources\Resource;
 use Filament\Tables;
-use Vendor\LLMObservability\Models\LLMRequest;
+use Mubseoul\LLMObservability\Models\LLMRequest;
 
 class LLMRequestResource extends Resource
 {
@@ -91,8 +91,8 @@ class LLMRequestResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => \Vendor\LLMObservability\Filament\Resources\LLMRequestResource\Pages\ListLLMRequests::class,
-            'view' => \Vendor\LLMObservability\Filament\Resources\LLMRequestResource\Pages\ViewLLMRequest::class,
+            'index' => \Mubseoul\LLMObservability\Filament\Resources\LLMRequestResource\Pages\ListLLMRequests::class,
+            'view' => \Mubseoul\LLMObservability\Filament\Resources\LLMRequestResource\Pages\ViewLLMRequest::class,
         ];
     }
 }

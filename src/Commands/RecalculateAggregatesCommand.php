@@ -1,10 +1,10 @@
 <?php
 
-namespace Vendor\LLMObservability\Commands;
+namespace Mubseoul\LLMObservability\Commands;
 
 use Carbon\Carbon;
 use Illuminate\Console\Command;
-use Vendor\LLMObservability\Services\AggregateService;
+use Mubseoul\LLMObservability\Services\AggregateService;
 
 class RecalculateAggregatesCommand extends Command
 {

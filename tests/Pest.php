@@ -1,5 +1,5 @@
 <?php
 
-use Vendor\LLMObservability\Tests\TestCase;
+use Mubseoul\LLMObservability\Tests\TestCase;
 
 uses(TestCase::class)->in('Feature', 'Unit');

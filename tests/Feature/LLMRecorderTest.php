@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Queue;
-use Vendor\LLMObservability\Jobs\RecordLLMRequestJob;
-use Vendor\LLMObservability\Models\LLMRequest;
-use Vendor\LLMObservability\Services\LLMRecorder;
+use Mubseoul\LLMObservability\Jobs\RecordLLMRequestJob;
+use Mubseoul\LLMObservability\Models\LLMRequest;
+use Mubseoul\LLMObservability\Services\LLMRecorder;
 
 beforeEach(function () {
     config(['llm-observability.recording.enabled' => true]);

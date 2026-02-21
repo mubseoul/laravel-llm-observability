@@ -1,6 +1,6 @@
 <?php
 
-use Vendor\LLMObservability\Services\CostCalculator;
+use Mubseoul\LLMObservability\Services\CostCalculator;
 
 it('can calculate cost for OpenAI GPT-4', function () {
     $calculator = new CostCalculator();

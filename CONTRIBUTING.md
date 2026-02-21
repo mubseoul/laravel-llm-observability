@@ -6,7 +6,7 @@ Thank you for considering contributing to Laravel LLM Observability!
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/vendor/laravel-llm-observability.git
+git clone https://github.com/mubseoul/laravel-llm-observability.git
 cd laravel-llm-observability
 ```
 

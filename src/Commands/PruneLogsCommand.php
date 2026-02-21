@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\LLMObservability\Commands;
+namespace Mubseoul\LLMObservability\Commands;
 
 use Illuminate\Console\Command;
-use Vendor\LLMObservability\Models\LLMRequest;
-use Vendor\LLMObservability\Models\LLMUsageAggregate;
-use Vendor\LLMObservability\Models\LLMWebhookDelivery;
+use Mubseoul\LLMObservability\Models\LLMRequest;
+use Mubseoul\LLMObservability\Models\LLMUsageAggregate;
+use Mubseoul\LLMObservability\Models\LLMWebhookDelivery;
 
 class PruneLogsCommand extends Command
 {

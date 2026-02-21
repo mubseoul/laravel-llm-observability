@@ -1,9 +1,9 @@
 <?php
 
-namespace Vendor\LLMObservability\Filament\Resources\LLMRequestResource\Pages;
+namespace Mubseoul\LLMObservability\Filament\Resources\LLMRequestResource\Pages;
 
 use Filament\Resources\Pages\ListRecords;
-use Vendor\LLMObservability\Filament\Resources\LLMRequestResource;
+use Mubseoul\LLMObservability\Filament\Resources\LLMRequestResource;
 
 class ListLLMRequests extends ListRecords
 {

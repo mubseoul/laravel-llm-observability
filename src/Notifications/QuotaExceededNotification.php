@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\LLMObservability\Notifications;
+namespace Mubseoul\LLMObservability\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
-use Vendor\LLMObservability\Models\LLMAlertRule;
+use Mubseoul\LLMObservability\Models\LLMAlertRule;
 
 class QuotaExceededNotification extends Notification
 {

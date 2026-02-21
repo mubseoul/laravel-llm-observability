@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\LLMObservability\Models;
+namespace Mubseoul\LLMObservability\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

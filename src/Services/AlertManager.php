@@ -1,12 +1,12 @@
 <?php
 
-namespace Vendor\LLMObservability\Services;
+namespace Mubseoul\LLMObservability\Services;
 
 use Illuminate\Support\Facades\Notification;
-use Vendor\LLMObservability\Jobs\SendWebhookJob;
-use Vendor\LLMObservability\Models\LLMAlertRule;
-use Vendor\LLMObservability\Models\LLMUsageAggregate;
-use Vendor\LLMObservability\Notifications\QuotaExceededNotification;
+use Mubseoul\LLMObservability\Jobs\SendWebhookJob;
+use Mubseoul\LLMObservability\Models\LLMAlertRule;
+use Mubseoul\LLMObservability\Models\LLMUsageAggregate;
+use Mubseoul\LLMObservability\Notifications\QuotaExceededNotification;
 
 class AlertManager
 {

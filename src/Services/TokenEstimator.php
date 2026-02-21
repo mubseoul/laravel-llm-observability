@@ -1,8 +1,8 @@
 <?php
 
-namespace Vendor\LLMObservability\Services;
+namespace Mubseoul\LLMObservability\Services;
 
-use Vendor\LLMObservability\Contracts\TokenEstimator as TokenEstimatorContract;
+use Mubseoul\LLMObservability\Contracts\TokenEstimator as TokenEstimatorContract;
 
 class TokenEstimator implements TokenEstimatorContract
 {

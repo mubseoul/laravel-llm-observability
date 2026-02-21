@@ -1,7 +1,7 @@
 <?php
 
-use Vendor\LLMObservability\Models\LLMQuota;
-use Vendor\LLMObservability\Services\QuotaEnforcer;
+use Mubseoul\LLMObservability\Models\LLMQuota;
+use Mubseoul\LLMObservability\Services\QuotaEnforcer;
 
 beforeEach(function () {
     config(['llm-observability.quotas.enabled' => true]);
@@ -33,7 +33,7 @@ it('blocks requests when quota exceeded', function () {
     ]);
 
     // Create a usage aggregate showing we've used the quota
-    \Vendor\LLMObservability\Models\LLMUsageAggregate::create([
+    \Mubseoul\LLMObservability\Models\LLMUsageAggregate::create([
         'scope' => 'user',
         'scope_id' => '1',
         'period' => 'day',

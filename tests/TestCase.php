@@ -1,10 +1,10 @@
 <?php
 
-namespace Vendor\LLMObservability\Tests;
+namespace Mubseoul\LLMObservability\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Vendor\LLMObservability\LLMObservabilityServiceProvider;
+use Mubseoul\LLMObservability\LLMObservabilityServiceProvider;
 
 class TestCase extends Orchestra
 {

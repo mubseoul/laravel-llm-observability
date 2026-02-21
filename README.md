@@ -1,8 +1,8 @@
 # Laravel LLM Observability
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/vendor/laravel-llm-observability.svg?style=flat-square)](https://packagist.org/packages/vendor/laravel-llm-observability)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/vendor/laravel-llm-observability/ci.yml?branch=main&label=tests&style=flat-square)](https://github.com/vendor/laravel-llm-observability/actions?query=workflow%3Aci+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/vendor/laravel-llm-observability.svg?style=flat-square)](https://packagist.org/packages/vendor/laravel-llm-observability)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mubseoul/laravel-llm-observability.svg?style=flat-square)](https://packagist.org/packages/mubseoul/laravel-llm-observability)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/mubseoul/laravel-llm-observability/ci.yml?branch=main&label=tests&style=flat-square)](https://github.com/mubseoul/laravel-llm-observability/actions?query=workflow%3Aci+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/mubseoul/laravel-llm-observability.svg?style=flat-square)](https://packagist.org/packages/mubseoul/laravel-llm-observability)
 
 A Laravel-native observability and cost tracking toolkit for LLM calls (OpenAI, Claude, Ollama, and more). Track every LLM request in your Laravel application with detailed metrics, enforce quotas, monitor costs, and gain insights through a beautiful Filament dashboard.
 
@@ -62,7 +62,7 @@ A Laravel-native observability and cost tracking toolkit for LLM calls (OpenAI, 
 Install the package via Composer:
 
 ```bash
-composer require vendor/laravel-llm-observability
+composer require mubseoul/laravel-llm-observability
 ```
 
 Publish the configuration file:
@@ -138,7 +138,7 @@ Prices are in USD per 1M tokens.
 ### Basic Recording
 
 ```php
-use Vendor\LLMObservability\Facades\LLM;
+use Mubseoul\LLMObservability\Facades\LLM;
 
 $response = LLM::record([
     'provider' => 'openai',
@@ -223,7 +223,7 @@ When a quota is exceeded, the middleware returns a 429 response:
 ### Programmatic Quota Checking
 
 ```php
-use Vendor\LLMObservability\Services\QuotaEnforcer;
+use Mubseoul\LLMObservability\Services\QuotaEnforcer;
 
 $enforcer = app(QuotaEnforcer::class);
 
@@ -241,7 +241,7 @@ if (!$result['allowed']) {
 ### Managing Quotas
 
 ```php
-use Vendor\LLMObservability\Models\LLMQuota;
+use Mubseoul\LLMObservability\Models\LLMQuota;
 
 // Create a custom quota for a user
 LLMQuota::create([
@@ -259,7 +259,7 @@ $quota = app(QuotaEnforcer::class)->getOrCreateQuota('user', '123');
 ### Creating Alert Rules
 
 ```php
-use Vendor\LLMObservability\Models\LLMAlertRule;
+use Mubseoul\LLMObservability\Models\LLMAlertRule;
 
 LLMAlertRule::create([
     'name' => 'High Daily Cost Alert',
@@ -349,7 +349,7 @@ No manual scheduler configuration needed.
 
 ```php
 use OpenAI\Laravel\Facades\OpenAI;
-use Vendor\LLMObservability\Facades\LLM;
+use Mubseoul\LLMObservability\Facades\LLM;
 
 $result = LLM::record([
     'provider' => 'openai',
@@ -373,7 +373,7 @@ $tokens = $result->usage->totalTokens ?? null;
 
 ```php
 use Illuminate\Support\Facades\Http;
-use Vendor\LLMObservability\Facades\LLM;
+use Mubseoul\LLMObservability\Facades\LLM;
 
 $result = LLM::record([
     'provider' => 'anthropic',

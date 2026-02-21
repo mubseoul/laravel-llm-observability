@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\LLMObservability\Jobs;
+namespace Mubseoul\LLMObservability\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -8,7 +8,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Log;
-use Vendor\LLMObservability\Models\LLMUsageAggregate;
+use Mubseoul\LLMObservability\Models\LLMUsageAggregate;
 
 class ResetDailyQuotasJob implements ShouldQueue
 {

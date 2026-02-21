@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\LLMObservability\Filament\Pages;
+namespace Mubseoul\LLMObservability\Filament\Pages;
 
 use Carbon\Carbon;
 use Filament\Pages\Page;
-use Vendor\LLMObservability\Models\LLMRequest;
-use Vendor\LLMObservability\Models\LLMUsageAggregate;
+use Mubseoul\LLMObservability\Models\LLMRequest;
+use Mubseoul\LLMObservability\Models\LLMUsageAggregate;
 
 class LLMDashboard extends Page
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\LLMObservability\Contracts;
+namespace Mubseoul\LLMObservability\Contracts;
 
 interface TokenEstimator
 {

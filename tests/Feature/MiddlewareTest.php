@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Http\Request;
-use Vendor\LLMObservability\Http\Middleware\EnsureLLMQuota;
-use Vendor\LLMObservability\Models\LLMQuota;
+use Mubseoul\LLMObservability\Http\Middleware\EnsureLLMQuota;
+use Mubseoul\LLMObservability\Models\LLMQuota;
 
 it('allows requests when quota is not exceeded', function () {
     $middleware = app(EnsureLLMQuota::class);
@@ -25,7 +25,7 @@ it('blocks requests when quota is exceeded', function () {
     ]);
 
     // Create usage showing quota is exceeded
-    \Vendor\LLMObservability\Models\LLMUsageAggregate::create([
+    \Mubseoul\LLMObservability\Models\LLMUsageAggregate::create([
         'scope' => 'global',
         'scope_id' => null,
         'period' => 'day',

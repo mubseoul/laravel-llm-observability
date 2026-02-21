@@ -1,5 +1,5 @@
 {
-    "name": "vendor/laravel-llm-observability",
+    "name": "mubseoul/laravel-llm-observability",
     "description": "Laravel-native observability and cost tracking toolkit for LLM calls (OpenAI, Claude, etc.)",
     "keywords": [
         "laravel",
@@ -16,8 +16,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Your Name",
-            "email": "your.email@example.com"
+            "name": "Mubseoul",
+            "email": "mubseoul@users.noreply.github.com"
         }
     ],
     "require": {
@@ -42,12 +42,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Vendor\\LLMObservability\\": "src/"
+            "Mubseoul\\LLMObservability\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Vendor\\LLMObservability\\Tests\\": "tests/"
+            "Mubseoul\\LLMObservability\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -65,10 +65,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Vendor\\LLMObservability\\LLMObservabilityServiceProvider"
+                "Mubseoul\\LLMObservability\\LLMObservabilityServiceProvider"
             ],
             "aliases": {
-                "LLM": "Vendor\\LLMObservability\\Facades\\LLM"
+                "LLM": "Mubseoul\\LLMObservability\\Facades\\LLM"
             }
         }
     },

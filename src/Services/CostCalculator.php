@@ -1,8 +1,8 @@
 <?php
 
-namespace Vendor\LLMObservability\Services;
+namespace Mubseoul\LLMObservability\Services;
 
-use Vendor\LLMObservability\Contracts\PricingProvider as PricingProviderContract;
+use Mubseoul\LLMObservability\Contracts\PricingProvider as PricingProviderContract;
 
 class CostCalculator implements PricingProviderContract
 {

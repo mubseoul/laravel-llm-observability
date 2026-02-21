@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\LLMObservability\Jobs;
+namespace Mubseoul\LLMObservability\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -9,8 +9,8 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
-use Vendor\LLMObservability\Models\LLMAlertRule;
-use Vendor\LLMObservability\Models\LLMWebhookDelivery;
+use Mubseoul\LLMObservability\Models\LLMAlertRule;
+use Mubseoul\LLMObservability\Models\LLMWebhookDelivery;
 
 class SendWebhookJob implements ShouldQueue
 {

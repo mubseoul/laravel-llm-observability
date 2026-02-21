@@ -1,6 +1,6 @@
 <?php
 
-use Vendor\LLMObservability\Services\TokenEstimator;
+use Mubseoul\LLMObservability\Services\TokenEstimator;
 
 it('can estimate tokens from character count', function () {
     $estimator = new TokenEstimator();
