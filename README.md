@@ -479,11 +479,11 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability, please send an email to [your.email@example.com](mailto:your.email@example.com). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability, please send an email to [security@mubseoul.com](mailto:security@mubseoul.com). All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
-- [Your Name](https://github.com/yourname)
+- [Mubseoul](https://mubseoul.com)
 - [All Contributors](../../contributors)
 
 ## License

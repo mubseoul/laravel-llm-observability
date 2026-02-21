@@ -10,7 +10,7 @@ We release patches for security vulnerabilities for the following versions:
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability within Laravel LLM Observability, please send an email to [your.email@example.com](mailto:your.email@example.com). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Laravel LLM Observability, please send an email to [security@mubseoul.com](mailto:security@mubseoul.com). All security vulnerabilities will be promptly addressed.
 
 **Please do not open public issues for security vulnerabilities.**
 
@@ -156,6 +156,6 @@ We appreciate responsible disclosure. Security researchers who report valid vuln
 
 ## Contact
 
-For security concerns, contact: [your.email@example.com](mailto:your.email@example.com)
+For security concerns, contact: [security@mubseoul.com](mailto:security@mubseoul.com)
 
 For general questions, use GitHub Issues or Discussions.
