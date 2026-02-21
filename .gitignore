@@ -1,0 +1,41 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# Build artifacts
+/build/
+/dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Composer
+composer.lock
+
+# PHPUnit / Pest
+.phpunit.result.cache
+.phpunit.cache
+coverage/
+coverage.xml
+.coverage
+
+# Laravel
+storage/
+bootstrap/cache/
+
+# Environment
+.env
+.env.backup
+.env.production
+
+# Logs
+*.log
+/storage/logs/
+
+# Testing
+/tests/temp/
